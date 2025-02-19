@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack serve --mode development --open"
+    "start": "webpack --watch --mode development"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.20",
+    "browser-sync-webpack-plugin": "^2.3.0",
     "css-loader": "^6.11.0",
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.0",
