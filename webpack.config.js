@@ -13,6 +13,13 @@ module.exports = {
 	module: {
 		rules: [
 			{
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[name].[hash][ext]', // Output path for fonts
+        },
+      },
+			{
 				test: /\.(png|jpe?g|gif|svg|webp)$/i,
 				type: 'asset/resource',
 				generator: {
@@ -47,6 +54,9 @@ module.exports = {
 						loader: 'sass-loader',
 						options: {
 							sourceMap: true,
+							sassOptions: {
+								includePaths: [path.resolve(__dirname, 'node_modules')],
+							},
 						},
 					},
 				],
