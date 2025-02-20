@@ -8,7 +8,7 @@
 	<body>
 		<!-- Navbar offcanvas -->
 		<header
-			class="navbar navbar-expand-lg bg-primary sticky-top"
+			class="navbar navbar-expand-lg bg-primary sticky-top fff-navbar"
 			data-bs-theme="dark"
 		>
 			<nav
@@ -16,28 +16,47 @@
 				aria-label="Main navigation"
 			>
 				<div class="js-navbar-spacer d-lg-none"></div>
-				<a class="navbar-brand" href="#">Responsive offcanvas navbar</a>
+				<a class="navbar-brand d-flex align-items-center justify-content-center p-0 me-0 me-lg-2" href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" viewBox="0 0 40 32">
+						<defs>
+							<style>
+								.navbar-brand-svg-st0 {
+									fill-rule: evenodd;
+								}
+							</style>
+						</defs>
+						<path
+							class="navbar-brand-svg-st0"
+							fill="currentColor"
+							d="M36.3,11.2c-.7-2.2-.8-4.9-.7-7,0-2.2-1.6-4.2-3.9-4.2H8.3c-2.3,0-4,2-3.9,4.2,0,2.1,0,4.8-.7,7-.7,2.2-1.8,3.6-3.7,3.8v2c1.9.2,3,1.6,3.7,3.8.7,2.2.8,4.9.7,7,0,2.2,1.6,4.2,3.9,4.2h23.4c2.3,0,4-2,3.9-4.2,0-2.1,0-4.8.7-7,.7-2.2,1.8-3.6,3.7-3.8v-2c-1.9-.2-3-1.6-3.7-3.8ZM25.9,9.5h-9.8v5.5h7.7v1.9h-7.7v7.6h-2.1V7.5h11.9v1.9Z"
+						/>
+					</svg>
+				</a>
 				<div class="js-navbar-search-toggler d-flex">
 					<div class="fer-search">
 						<!-- Button trigger modal -->
 						<button
 							type="button"
-							class="btn btn-primary"
+							class="btn btn-primary py-0 h-100 search-button js-search-button"
 							data-bs-toggle="modal"
 							data-bs-target="#exampleModal"
 						>
-							<i class="bi bi-search"></i>
+							<span class="d-flex align-items-center">
+								<i class="bi bi-search search-button-icon"></i>
+							</span>
 						</button>
 					</div>
 					<button
-						class="navbar-toggler"
+						class="navbar-toggler p-2"
 						type="button"
 						data-bs-toggle="offcanvas"
 						data-bs-target="#offcanvasNavbar2"
 						aria-controls="offcanvasNavbar2"
 						aria-label="Toggle navigation"
 					>
-						<i class="bi bi-three-dots"></i>
+						<span class="d-flex align-items-center">
+							<i class="bi bi-three-dots"></i>
+						</span>
 					</button>
 				</div>
 				<div

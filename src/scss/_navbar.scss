@@ -1,0 +1,52 @@
+.fff-navbar {
+
+  .search-button {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+  
+    &:hover,
+    &:focus {
+      background: transparent;
+      border: 0;
+      box-shadow: none;
+    }
+  
+    &-icon {
+      opacity: .65;
+      font-size: 20px;
+  
+      &:active,
+      &:hover,
+      &:focus {
+        opacity: 1;
+      }
+    }
+  }
+
+  // add nav-link class later
+  .navbar-toggler {
+    color: rgba(255, 255, 255, .85);
+    // margin-right: -.5rem;
+    border: 0;
+    font-size: 24px;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+    }
+    
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .navbar-brand {
+    width: 40px;
+    height: 40px;
+
+    &:hover {
+      transform: rotate(-5deg) scale(1.1);
+    }
+  }
+}
