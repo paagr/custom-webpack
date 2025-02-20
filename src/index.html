@@ -8,7 +8,7 @@
 	<body>
 		<!-- Navbar offcanvas -->
 		<header
-			class="navbar navbar-expand-lg bg-primary sticky-top fff-navbar"
+			class="navbar navbar-expand-lg bg-primary sticky-top fer-navbar"
 			data-bs-theme="dark"
 		>
 			<nav
@@ -16,8 +16,16 @@
 				aria-label="Main navigation"
 			>
 				<div class="js-navbar-spacer d-lg-none"></div>
-				<a class="navbar-brand d-flex align-items-center justify-content-center p-0 me-0 me-lg-2" href="#">
-					<svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" viewBox="0 0 40 32">
+				<a
+					class="navbar-brand d-flex align-items-center justify-content-center p-0 me-0 me-lg-2"
+					href="#"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="40"
+						height="32"
+						viewBox="0 0 40 32"
+					>
 						<defs>
 							<style>
 								.navbar-brand-svg-st0 {
@@ -37,12 +45,17 @@
 						<!-- Button trigger modal -->
 						<button
 							type="button"
-							class="btn btn-primary py-0 h-100 search-button js-search-button"
+							class="btn btn-primary py-0 search-button js-search-button d-flex align-items-center justify-content-between p-2 user-select-none"
 							data-bs-toggle="modal"
 							data-bs-target="#exampleModal"
 						>
 							<span class="d-flex align-items-center">
 								<i class="bi bi-search search-button-icon"></i>
+								<span class="search-button-text">Search</span>
+							</span>
+							<span class="search-button-keys">
+								<span class="search-button-key">CTRL</span>
+								<span class="search-button-key search-button-key-k">K</span>
 							</span>
 						</button>
 					</div>
@@ -60,14 +73,14 @@
 					</button>
 				</div>
 				<div
-					class="offcanvas offcanvas-end text-bg-dark"
+					class="offcanvas-lg offcanvas-end text-bg-dark bg-primary flex-grow-1"
 					tabindex="-1"
 					id="offcanvasNavbar2"
 					aria-labelledby="offcanvasNavbar2Label"
 				>
-					<div class="offcanvas-header">
+					<div class="offcanvas-header px-4 pb-0">
 						<h5 class="offcanvas-title" id="offcanvasNavbar2Label">
-							Offcanvas
+							Website title
 						</h5>
 						<button
 							type="button"
@@ -76,49 +89,45 @@
 							aria-label="Close"
 						></button>
 					</div>
-					<div class="offcanvas-body">
-						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#">Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Link</a>
-							</li>
-							<li class="nav-item dropdown">
+					<div class="offcanvas-body p-4 pt-0 p-lg-0">
+						<hr class="d-lg-none text-white-50">
+						<ul class="navbar-nav flex-row flex-wrap">
+							<li class="nav-item col-6 col-lg-auto">
 								<a
-									class="nav-link dropdown-toggle"
+									class="nav-link py-2 px-0 px-lg-2 active"
+									aria-current="page"
 									href="#"
-									role="button"
-									data-bs-toggle="dropdown"
-									aria-expanded="false"
+									>Home</a
 								>
-									Dropdown
-								</a>
-								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="#">Action</a></li>
-									<li>
-										<a class="dropdown-item" href="#">Another action</a>
-									</li>
-									<li>
-										<hr class="dropdown-divider" />
-									</li>
-									<li>
-										<a class="dropdown-item" href="#">Something else here</a>
-									</li>
-								</ul>
+							</li>
+							<li class="nav-item col-6 col-lg-auto">
+								<a class="nav-link py-2 px-0 px-lg-2" href="#">Docs</a>
+							</li>
+							<li class="nav-item col-6 col-lg-auto">
+								<a class="nav-link py-2 px-0 px-lg-2" href="#">Example</a>
+							</li>
+							<li class="nav-item col-6 col-lg-auto">
+								<a class="nav-link py-2 px-0 px-lg-2" href="#">Icons</a>
+							</li>
+							<li class="nav-item col-6 col-lg-auto">
+								<a class="nav-link py-2 px-0 px-lg-2" href="#">Themes</a>
+							</li>
+							<li class="nav-item col-6 col-lg-auto">
+								<a class="nav-link py-2 px-0 px-lg-2" href="#">Blog</a>
 							</li>
 						</ul>
-						<form class="d-flex mt-3 mt-lg-0" role="search">
-							<input
-								class="form-control me-2"
-								type="search"
-								placeholder="Search"
-								aria-label="Search"
-							/>
-							<button class="btn btn-outline-success" type="submit">
-								Search
-							</button>
-						</form>
+						<hr class="d-lg-none text-white-50">
+						<ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+							<li class="nav-item col-6 col-lg-auto">
+								<a class="nav-link py-2 px-0 px-lg-2" href="#"><small>Example</small></a>
+							</li>
+							<li class="nav-item col-6 col-lg-auto">
+								<a class="nav-link py-2 px-0 px-lg-2" href="#"><small>Icons</small></a>
+							</li>
+							<li class="nav-item col-6 col-lg-auto">
+								<a class="nav-link py-2 px-0 px-lg-2" href="#"><small>Themes</small></a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</nav>
