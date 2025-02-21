@@ -47,7 +47,7 @@
 							type="button"
 							class="btn btn-primary py-0 search-button js-search-button d-flex align-items-center justify-content-between p-2 user-select-none"
 							data-bs-toggle="modal"
-							data-bs-target="#exampleModal"
+							data-bs-target="#searchModal"
 						>
 							<span class="d-flex align-items-center">
 								<i class="bi bi-search search-button-icon"></i>
@@ -90,7 +90,7 @@
 						></button>
 					</div>
 					<div class="offcanvas-body p-4 pt-0 p-lg-0">
-						<hr class="d-lg-none text-white-50">
+						<hr class="d-lg-none text-white-50" />
 						<ul class="navbar-nav flex-row flex-wrap">
 							<li class="nav-item col-6 col-lg-auto">
 								<a
@@ -116,16 +116,22 @@
 								<a class="nav-link py-2 px-0 px-lg-2" href="#">Blog</a>
 							</li>
 						</ul>
-						<hr class="d-lg-none text-white-50">
+						<hr class="d-lg-none text-white-50" />
 						<ul class="navbar-nav flex-row flex-wrap ms-md-auto">
 							<li class="nav-item col-6 col-lg-auto">
-								<a class="nav-link py-2 px-0 px-lg-2" href="#"><small>Example</small></a>
+								<a class="nav-link py-2 px-0 px-lg-2" href="#"
+									><small>Example</small></a
+								>
 							</li>
 							<li class="nav-item col-6 col-lg-auto">
-								<a class="nav-link py-2 px-0 px-lg-2" href="#"><small>Icons</small></a>
+								<a class="nav-link py-2 px-0 px-lg-2" href="#"
+									><small>Icons</small></a
+								>
 							</li>
 							<li class="nav-item col-6 col-lg-auto">
-								<a class="nav-link py-2 px-0 px-lg-2" href="#"><small>Themes</small></a>
+								<a class="nav-link py-2 px-0 px-lg-2" href="#"
+									><small>Themes</small></a
+								>
 							</li>
 						</ul>
 					</div>
@@ -136,24 +142,40 @@
 
 		<!-- Search Modal -->
 		<div
-			class="modal fade"
-			id="exampleModal"
+			class="modal fade fer-search-modal"
+			id="searchModal"
 			tabindex="-1"
-			aria-labelledby="exampleModalLabel"
+			aria-labelledby="searchModalLabel"
 			aria-hidden="true"
 		>
 			<div class="modal-dialog">
 				<div class="modal-content">
-					<div class="modal-header">
-						<h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-						<button
+					<div class="modal-header fer-search-modal-header">
+						<form class="fer-search-modal-form">
+							<label for="searchModalInputQuery" class="fer-search-modal-form-label">
+								<i class="bi bi-search text-primary"></i>
+							</label>
+							<input
+								type="search"
+								class="fer-search-modal-form-input"
+								id="searchModalInputQuery"
+								placeholder="Search"
+								autocomplete="off"
+								aria-describedby="searchQuery"
+							/>
+
+							<button type="reset" class="fer-search-modal-form-reset">
+								<i class="bi bi-x"></i>
+							</button>
+						</form>
+						<!-- <button
 							type="button"
-							class="btn-close"
+							class="btn btn-link fer-search-modal-close fw-medium text-decoration-none"
 							data-bs-dismiss="modal"
 							aria-label="Close"
-						></button>
+						>Cancel</button> -->
 					</div>
-					<div class="modal-body">...</div>
+					<!-- <div class="modal-body">...</div>
 					<div class="modal-footer">
 						<button
 							type="button"
@@ -163,7 +185,7 @@
 							Close
 						</button>
 						<button type="button" class="btn btn-primary">Save changes</button>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>

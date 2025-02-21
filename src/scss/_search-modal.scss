@@ -1,0 +1,85 @@
+.fer-search-modal {
+  &-header {
+    padding: 10px;
+    border: 0;
+
+    @include media-breakpoint-up(md) {
+      padding: 12px;
+    }
+  }
+
+  &-form {
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: inset 0 0 0 2px $primary;
+    display: flex;
+    align-items: center;
+    height: 56px;
+    margin: 0;
+    padding: 0 12px;
+    position: relative;
+    width: 100%;
+
+    &-label {
+      font-size: 24px;
+    }
+
+    &-input {
+      background: transparent;
+      border: 0;
+      flex: 1;
+      font-size: 1.2em;
+      height: 100%;
+      outline: none;
+      padding: 0 0 0 8px;
+      width: 80%;
+
+
+      /* clears the ‘X’ from Internet Explorer */
+      &[type=search]::-ms-clear {
+        display: none;
+        width: 0;
+        height: 0;
+      }
+
+      &[type=search]::-ms-reveal {
+        display: none;
+        width: 0;
+        height: 0;
+      }
+
+      /* clears the ‘X’ from Chrome */
+      &[type="search"]::-webkit-search-decoration,
+      &[type="search"]::-webkit-search-cancel-button,
+      &[type="search"]::-webkit-search-results-button,
+      &[type="search"]::-webkit-search-results-decoration {
+        display: none;
+      }
+    }
+
+    &-reset {
+      background: transparent;
+      border: 0;
+      padding: 2px;
+      font-size: 20px;
+    }
+  }
+
+  &-close {
+    display: none;
+
+    @include media-breakpoint-down(md) {
+      display: inline-block;
+    }
+  }
+}
+
+
+// /* clears the ‘X’ from Internet Explorer */
+// input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+// input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+// /* clears the ‘X’ from Chrome */
+// input[type="search"]::-webkit-search-decoration,
+// input[type="search"]::-webkit-search-cancel-button,
+// input[type="search"]::-webkit-search-results-button,
+// input[type="search"]::-webkit-search-results-decoration { display: none; }
